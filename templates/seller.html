@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load category_template_tags %}
+{% load slide_template_tags %}
+{% block content %}
+{% for item in object_list %}
+<p>{{ item.user}}</p>
+<br><p>{{item.ref_code}}</p>
+<br><p>{{item.items}}</p>
+{% endfor%}
+{% endblock%}
